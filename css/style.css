@@ -123,6 +123,7 @@ body {
   border-radius: 10px;
   opacity: 0;
 }
+
 .modal__btns button {
   flex-grow: 1;
   width: 33%;
