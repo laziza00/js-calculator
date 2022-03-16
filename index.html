@@ -7,11 +7,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+
+  <div class="container">
+    <div class="box">
+      <div class="calculate">
+        <div class="calculate__window">
+          <p class="calculate__form form" id="output"></p>
+        </div>
+        <div class="calculate__body">
+          <div style="display: flex; justify-content: space-between; width: 100%;">
+            <button class="btn btn7 btne" id="seven" value="7">
+              7
+            </button>
+            <button class="btn btn8 btne" id="eight" value="8">
+              8
+            </button>
+            <button class="btn btn9 btne" id="nine" value="9">
+              9
+            </button>
+            <button class="btn btnAc btne" id="remove" >
+              AC
+            </button>
+          </div>
+          <div  style="display: flex; justify-content: space-between;width: 100%;">
+            <button class="btn btn4 btne" id="four" value="4">
+              4
+            </button>
+            <button class="btn btn5 btne" id="fife" value="5">
+              5
+            </button>
+            <button class="btn btn6 btne" id="six" value="6">
+              6
+            </button>
+            <button class="btn btnopen btne" id="openmodal" >
+              <i class='bx bx-chevron-left'></i>
+            </button>
+          </div>
+          <div style="display: flex; ">
+            <div  style="width: 75%;" >
+              <div style=" display: flex;">
+                <button class="btn btn1" id="one" value="1">
+                  1
+                </button>
+                <button class="btn btn2" id="two" value="2">
+                  2
+                </button>
+                <button class="btn btn3" id="three" value="3">
+                  3
+                </button>
+              </div>
+              <div style="display: flex;">
+                <button class="btn btnx" style="width: 19%" id="removex" >
+                  <i class='bx bxs-tag-x'></i>
+                </button>
+                <button class="btn btn0" style="width: 19.5%" id="zero" value="0">
+                  0
+                </button>
+                <button class="btn btndot" style="width: 19.5%"id="dot" value="." >
+                  .
+                </button>
+              </div>
+            </div>
+            <div style="width: 16%; display: flex; justify-content: flex-end; ">
+              <button class="btn btnteng " id="equal">
+                =
+              </button>
+            </div>
+       
+     
+          </div>
+          <div style="display: flex;">
+            <button class="btn btnbol btne" id="divide" value="/">
+              ÷
+            </button>
+            <button class="btn btnkop btne" id="multi" value="*">
+              *
+            </button>
+            <button class="btn btnayir btne" id="minus" value="-">
+              -
+            </button>
+            <button class="btn btnqosh btne" id="plus" value="+">
+              +
+              </button>
+          </div>
+      
+        </div>
+      </div>
+
+      <div class="modal" id="modal">
+        <button class="close__btn show" ><i class='bx bx-chevron-left' id="close"></i></button>
+        <div class="modal__btns" style="display: flex;">
+          <button class="btn btn1" style="flex-grow: 1;" id="sin" value="sin">
+            sin
+          </button>
+          <button class="btn btn2" style="flex-grow: 1;" id="cos" value="cos">
+            cos
+          </button>
+          <button class="btn btn3" style="flex-grow: 1;" id="tan" value="tan">
+            tan
+          </button>
+        </div>
+        <div class="modal__btns" style="display: flex;">
+          <button class="btn btn1" style="flex-grow: 1;" id="factorial" value="ex">
+            x!
+          </button>
+          <button class="btn btn2" style="flex-grow: 1;" id="p" value="π">
+            π
+          </button>
+          <button class="btn btn3" style="flex-grow: 1;" id="log" value="log">
+            log
+          </button>
+        </div>
+        <div class="modal__btns" style="display: flex;">
+          <button class="btn btn1" style="flex-grow: 1;" id="leftbracket" value="(">
+            (
+          </button>
+          <button class="btn btn2" style="flex-grow: 1;" id="rightbracket" value=")">
+            )
+          </button>
+          <button class="btn btn3" style="flex-grow: 1;" id="root" value="√">
+            √
+          </button>
+        </div>
+        <div class="modal__btns" style="display: flex;">
+          <button class="btn btn1" style="flex-grow: 1;" id="ee" value="e">
+            e
+          </button>
+          <button class="btn btn2" style="flex-grow: 1;" id="percent" value="%">
+            %
+          </button>
+          <button class="btn btn3" style="flex-grow: 1;" id="pow" value="e^">
+            e^
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
 
   <script src="js/main.js"></script>
 </body>
