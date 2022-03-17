@@ -25,7 +25,7 @@ let percent = document.querySelector('#percent');
 let pow = document.querySelector('#pow');
 
 
-
+let empty =''
 
 
 // numberbtns
@@ -121,7 +121,26 @@ factorial.addEventListener("click",()=>{
     output.innerHTML= sum;
 } )
 
+p.addEventListener('click', () =>{
+
+  empty = Math.PI;
+  output.innerHTML = empty;
+
+})
+
+ee.addEventListener('click', ()=>{
+
+  empty ="2,7182818182846";
+  output.innerHTML = empty;
+
+})
+
+
+let control =[]
+// remove btn
+
 removex.addEventListener("click", ()=>{
+
     let a = output.innerHTML.split('').pop()
     if(a=='-' || a=='+' || a=='/' || a=='*'){
       output.innerHTML= "";
