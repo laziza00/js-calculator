@@ -16,25 +16,20 @@ body {
 }
 .container {
   padding: 100px 0;
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-}
-.box {
-  height: 490px;
-  /* overflow: hidden !important; */
   width: 100%;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
 }
+
 .calculate {
   height: 490px;
-  /* overflow: hidden !important; */
+  overflow: hidden !important;
   position: relative;
   border: 4px solid rgb(221, 219, 219);
   box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
   border-radius: 10px !important;
-  width: 30%;
+  width: 300px;
 }
 .calculate__window {
       border-top-left-radius: 10px !important;
@@ -112,11 +107,11 @@ body {
 .modal {
   position: absolute;
   top: 265px; 
-  right: 23.5%;
+  right: 327px;
   padding: 0 !important;
   padding: 30px 15px;
   background-color:  rgb(245, 236, 236);
-  width: 16%;
+  width: 235px;
   height: 319px;
   z-index: 10;
   transition: all 0.5s ease;
@@ -135,7 +130,7 @@ body {
   position: absolute;
   width: 55px;
   height: 45px;
-  top: 73px;
+  top: 69px;
   right: 100%;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -148,7 +143,7 @@ body {
 }
 .show {
   transition: all 0.5s ease;
-  right: 39.8%;
+  right: 565px;
   opacity: 1;
 }
 
